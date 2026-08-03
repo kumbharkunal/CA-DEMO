@@ -203,10 +203,6 @@
   --color-error: var(--error);
   --color-info: var(--info);
 
-  /* Third-party brand — used only on the floating contact action, glass-deep
-     so it reads as intentional, never loud. */
-  --color-whatsapp: #128c7e;
-
   /* Typography */
   --font-display: "Fraunces", Georgia, "Times New Roman", serif;
   --font-sans:

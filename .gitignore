@@ -7,9 +7,9 @@ dist-ssr/
 *.local
 
 # Vite caches
-node_modules/.vite/
-node_modules/.tmp/
-node_modules/.vite-temp/
+.vite/
+.tmp/
+.vite-temp/
 
 # Logs
 logs/

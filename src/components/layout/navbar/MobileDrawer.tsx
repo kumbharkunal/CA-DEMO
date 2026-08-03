@@ -87,7 +87,7 @@ export function MobileDrawer({ open, onClose }: Props) {
               </DialogDescription>
 
               {/* Links — Fraunces, large enough to read across a room */}
-              <nav aria-label="Mobile" className="flex-1 overflow-y-auto px-6 pt-20">
+              <nav aria-label="Mobile" className="flex-1 overflow-y-auto px-6 pt-16">
                 <ul className="m-0 list-none p-0">
                   {primaryNav.map((item, i) => (
                     <motion.li
@@ -109,7 +109,7 @@ export function MobileDrawer({ open, onClose }: Props) {
                             onClick={() =>
                               setExpanded((prev) => (prev === item.label ? null : item.label))
                             }
-                            className="flex w-full items-center justify-between py-4.5 text-left font-display text-[clamp(1.625rem,4vw+0.5rem,2rem)] leading-tight text-text-inverse outline-none focus-visible:text-brand-brass"
+                            className="flex w-full items-center justify-between py-4 text-left font-display text-[clamp(1.625rem,4vw+0.5rem,2rem)] leading-tight text-text-inverse outline-none focus-visible:text-brand-brass"
                           >
                             {item.label}
                             <motion.span
@@ -133,7 +133,7 @@ export function MobileDrawer({ open, onClose }: Props) {
                                     <Link
                                       to={sub.href}
                                       className={cn(
-                                        "block py-3.5 pl-4 text-body-l text-text-inverse-muted outline-none",
+                                        "block py-3 pl-4 text-body-l text-text-inverse-muted outline-none",
                                         "transition-colors duration-150 hover:text-text-inverse",
                                         "focus-visible:text-text-inverse",
                                       )}
@@ -145,7 +145,7 @@ export function MobileDrawer({ open, onClose }: Props) {
                                 <li>
                                   <Link
                                     to={item.href}
-                                    className="block py-3.5 pl-4 text-body-s font-medium text-brand-brass-text outline-none focus-visible:underline"
+                                    className="block py-3 pl-4 text-body-s font-medium text-brand-brass-text outline-none focus-visible:underline"
                                   >
                                     All {item.label.toLowerCase()} →
                                   </Link>
@@ -158,7 +158,7 @@ export function MobileDrawer({ open, onClose }: Props) {
                         <Link
                           to={item.href}
                           aria-current={pathname === item.href ? "page" : undefined}
-                          className="block py-4.5 font-display text-[clamp(1.625rem,4vw+0.5rem,2rem)] leading-tight text-text-inverse outline-none transition-colors focus-visible:text-brand-brass"
+                          className="block py-4 font-display text-[clamp(1.625rem,4vw+0.5rem,2rem)] leading-tight text-text-inverse outline-none transition-colors focus-visible:text-brand-brass"
                         >
                           {item.label}
                         </Link>
@@ -178,7 +178,7 @@ export function MobileDrawer({ open, onClose }: Props) {
                     <Link
                       to="/search"
                       aria-current={pathname === "/search" ? "page" : undefined}
-                      className="block py-4.5 font-display text-[clamp(1.625rem,4vw+0.5rem,2rem)] leading-tight text-text-inverse outline-none transition-colors focus-visible:text-brand-brass"
+                      className="block py-4 font-display text-[clamp(1.625rem,4vw+0.5rem,2rem)] leading-tight text-text-inverse outline-none transition-colors focus-visible:text-brand-brass"
                     >
                       Search
                     </Link>
@@ -195,7 +195,7 @@ export function MobileDrawer({ open, onClose }: Props) {
                   duration: reducedMotion ? duration.micro : duration.entrance,
                   ease: easeOut,
                 }}
-                className="border-t border-white/10 px-6 pb-[max(1.25rem,env(safe-area-inset-bottom))] pt-5"
+      className="border-t border-white/10 px-6 pb-[max(1rem,env(safe-area-inset-bottom))] pt-4"
               >
                 <a
                   href={`tel:${siteConfig.phone.replace(/\s/g, "")}`}

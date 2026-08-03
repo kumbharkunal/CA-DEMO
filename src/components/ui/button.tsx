@@ -25,9 +25,9 @@ const buttonVariants = cva(
         default: "h-11 px-5",
         sm: "h-9 px-4 text-body-s",
         md: "h-10 px-4",
-        lg: "h-[52px] px-6",
+        lg: "h-12 px-6",
         /** 1:1 icon-only action (e.g. form submit arrows). */
-        smIcon: "size-11",
+        smIcon: "size-10",
       },
     },
     defaultVariants: {

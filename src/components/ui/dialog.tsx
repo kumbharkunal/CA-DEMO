@@ -49,9 +49,8 @@ function DialogModalContent({
         data-slot="dialog-modal-content"
         className={cn(
           "fixed left-1/2 top-1/2 z-toast flex w-[calc(100vw-2rem)] max-w-lg -translate-x-1/2 -translate-y-1/2 flex-col overflow-hidden rounded-2xl border border-border-default bg-surface p-5 shadow-e3 outline-none sm:p-7",
-          // Never taller than the viewport — the grow-and-shrink dance lands on
-          // `dvh`, which tracks the mobile keyboard so no footer is ever clipped.
-          "max-h-[calc(100dvh-2.5rem)]",
+          // Never taller than the viewport so the footer is never clipped.
+          "max-h-[calc(100vh-2.5rem)]",
           "data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-[0.98] data-[state=open]:duration-200",
           "data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-[0.98] data-[state=closed]:duration-150",
           className,
